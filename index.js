@@ -38,9 +38,9 @@ console.log(valuses.length)
 pool.getConnection(function(err, connection) {
   // Use the connection
   async.eachOfSeries(valuses,(item,callback)=>{
-    connection.query('INSERT INTO test.base (id ,name,phone, article ) VALUES '+item, function (error, results, fields) {
+    connection.query('INSERT INTO base (id ,name,phone, article ) VALUES '+item, function (error, results, fields) {
 
-      console.log(results)
+      //console.log(results)
       // And done with the connection.
       connection.release();
       // Handle error after the release.
