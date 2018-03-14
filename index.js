@@ -9,7 +9,7 @@ var pool  = mysql.createPool({
   database        : 'test'
 });
 
-//str="1"
+str="1"
 let valuses = [];
 let value1 = "";
 for(let i=6;i<100000;i++){
