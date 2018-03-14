@@ -22,7 +22,7 @@ for(let i=6;i<400000;i++){
 valuses.push(value1);
 
 let value2 = "";
-for(let i=400000;i<1000000;i++){
+for(let i=400000;i<800000;i++){
   if(i==400000){
     value2 +='('+i+',"pangff'+i+'","1234567890","'+str+'")'
   }else{
