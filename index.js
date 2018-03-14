@@ -12,7 +12,7 @@ var pool  = mysql.createPool({
 //str="1"
 let valuses = [];
 let value1 = "";
-for(let i=6;i<400000;i++){
+for(let i=6;i<200000;i++){
   if(i==6){
     value1 +='('+i+',"pangff'+i+'","1234567890","'+str+'")'
   }else{
@@ -22,8 +22,8 @@ for(let i=6;i<400000;i++){
 valuses.push(value1);
 
 let value2 = "";
-for(let i=400000;i<800000;i++){
-  if(i==400000){
+for(let i=200000;i<400000;i++){
+  if(i==200000){
     value2 +='('+i+',"pangff'+i+'","1234567890","'+str+'")'
   }else{
     value2 +=',('+i+',"pangff'+i+'","1234567890","'+str+'")'
