@@ -42,10 +42,10 @@ pool.getConnection(function(err, connection) {
 
       //console.log(results)
       // And done with the connection.
-      connection.release();
+      //connection.release();
       // Handle error after the release.
       if (error){
-        console.error("error")
+        console.error(error)
       }
       callback()
 
